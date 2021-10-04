@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body {
+    background: #ee4a3f;
+}
+
+
+
+/* NAVIGATION PART STARTS HERE */
+header{
+    background: rgb(255, 255, 255);
+   
+    width: 100%;
+    z-index: 999;
+    box-shadow: 1px 5px 1px #e4e4e4;
+}
+.menu ul {
+    display: flex;
+}
+.menu ul li span {
+    color: #005e7e; 
+    padding-left: 20px;
+}
+.menu ul li {
+    padding-left: 40px;
+}
+.menu ul li a {
+    color: #005e7e;
+    font-size: 18px;
+}
+.menu ul li a:hover{
+    color: rgb(255, 238, 0);
+}
+
+
+/* CONTACT PART STARTS HERE */
+.contact-main {
+    margin-top: 80px;
+}
+.contact-row1 {
+    margin-top: ;
+}
+.contact-row1 h2 {
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    padding-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+.contact-row1 p {
+    text-align: justify;
+    padding-right: 150px;
+    font-size: 14px;
+    color: #fff;
+    padding-top: 30px;
+}
+
+
+/* FORM BUTTON */
+.form-main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.form-btn button {
+    background: transparent;
+    border: none;
+    
+}
+.form-btn button a {
+    font-family: 'Marck Script', cursive;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+.f-group {
+    margin-top: 15px;
+}
+.f-group input {
+    padding: 10px ;
+    background: #ff6258;
+    border: none;
+    color: #fff;
+}
+.f-group label{
+    color: #fff;
+    text-transform: uppercase;
+}
+footer {
+    background: tomato;
+}
+
+
+
+
+
+/* RESPONSIVE PART STARTS HERE */
+
+@media only screen and (max-width: 576px){
+
+    /* NAV BAR STARTS HERE */
+    .logo {
+        width: 250px;
+        margin-top: 10px;
+    }
+    
+    .menu ul li a {
+        font-size: 14px;
+    }
+    .menu ul li {
+        padding-left: 20px;
+    }
+
+    /* CONTACT FORM STARTS HERE */
+    .contact-main  {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contact-text {
+        text-align: center;
+    }
+    .contact-row1 p {
+        padding-right: 0px;
+        text-align: center;
+    }
+    .contact-logo img {
+        width: 150px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+    .form-main {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+    .form-main .f-1 form {
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .f-1 .i-1 input {
+        width: 250px;
+        margin-right: 17px;
+    }
+    .form-btn {
+        display: flex;
+        justify-content: center;
+    }
+    .f-group #msg {
+        height: 150px;
+    }
+    footer h6 {
+        font-size: 10px;
+    }
+}

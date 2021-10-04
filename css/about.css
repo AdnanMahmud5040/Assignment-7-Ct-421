@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+/* NAVIGATION PART STARTS HERE */
+header{
+    background: rgb(255, 255, 255);
+   
+    width: 100%;
+    z-index: 999;
+    box-shadow: 1px 5px 4px #ddd;
+}
+.menu ul {
+    display: flex;
+}
+.menu ul li span {
+    color: #005e7e; 
+    padding-left: 20px;
+}
+.menu ul li {
+    padding-left: 40px;
+}
+.menu ul li a {
+    color: #005e7e;
+    font-size: 18px;
+}
+.menu ul li a:hover{
+    color: rgb(255, 238, 0);
+}
+
+
+
+/* ABOUT PART STARTS HERE */
+
+.about-left p {
+    text-align: justify;
+    padding-right: 40px;
+}
+.para1 {
+    padding-bottom: 15px;
+}
+.about-left h2 {
+    padding-bottom: 45px;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+.about-right img{
+    padding-bottom: 40px;
+}
+.about-right p{
+    text-align: justify;
+    padding-left: 54px;
+    font: 18px;
+}
+
+
+footer {
+    background: tomato;
+}
+
+
+
+/* RESPONSIVE PART STARTS HERE */
+
+@media only screen and (max-width: 576px){
+    /* NAV BAR STARTS HERE */
+    .logo {
+        width: 250px;
+        margin-top: 10px;
+    }
+    
+    
+    .menu ul li a {
+        font-size: 14px;
+    }
+    .menu ul li {
+        padding-left: 20px;
+    }
+
+    /* ABOUT STARTS HERE */
+
+    .about-main {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-left {
+        text-align: center;
+    }
+    .about-left h2 {
+        padding-top: 40px;
+        font-size: 30px ;
+        padding-bottom: 35px;
+    }
+    .about-right p{
+        padding-left: 0px;
+        padding-bottom: 40px;
+        font-size: 14px;
+    }
+    .about-left p {
+        font-size: 14px;
+    }
+    .about-right img{
+        padding-bottom: 20px;
+        width: 400px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .footer-text h6 {
+        font-size: 10px;
+    }
+}
